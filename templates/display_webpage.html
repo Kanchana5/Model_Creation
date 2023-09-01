@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1> Webpage Table</h1>
+        <table border="2px",background-color="blue">
+            <tr>
+                <th background-color="blue">Topic_name</th>
+                <th background-color="blue">Name</th>
+                <th background-color="blue">URL</th>
+            </tr>
+            <h2>
+            {% for wo in QSWO %}
+            <tr>
+                <td>{{wo.topic_name}}</td>
+                <td>{{wo.name}}</td>
+                <td>{{wo.url}}</td>
+            </tr>
+        </h2>
+
+            {% endfor %}
+
+
+        </table>
+
+
+    </center>
+
+    
+</body>
+</html>
